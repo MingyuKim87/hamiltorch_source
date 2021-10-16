@@ -1,0 +1,241 @@
+Sampling (Sampler.RMHMC; Integrator.EXPLICIT)
+Time spent  | Time remain.| Progress             | Samples | Samples/sec
+Step: 0, Current Hamiltoninian: tensor([[31.7216]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.6534]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:05 | 0d:00:04:12 | -------------------- |   1/100 | 0.39       Step: 1, Current Hamiltoninian: tensor([[32.6589]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.7328]], grad_fn=<AddBackward0>)
+Accept rho: -0.07387542724609375
+0d:00:00:10 | 0d:00:05:28 | -------------------- |   2/100 | 0.30       Step: 2, Current Hamiltoninian: tensor([[36.8213]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[36.8289]], grad_fn=<AddBackward0>)
+Accept rho: -0.00756072998046875
+0d:00:00:15 | 0d:00:06:07 | #------------------- |   3/100 | 0.26       Step: 3, Current Hamiltoninian: tensor([[31.1955]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.1949]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:20 | 0d:00:06:28 | #------------------- |   4/100 | 0.25       Step: 4, Current Hamiltoninian: tensor([[28.1419]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.0688]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:25 | 0d:00:06:41 | #------------------- |   5/100 | 0.24       Step: 5, Current Hamiltoninian: tensor([[29.6494]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.6328]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:30 | 0d:00:06:48 | #------------------- |   6/100 | 0.23       Step: 6, Current Hamiltoninian: tensor([[34.5936]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[48.1518]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:35 | 0d:00:06:54 | #------------------- |   7/100 | 0.22       Step: 7, Current Hamiltoninian: tensor([[30.8427]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.7478]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:40 | 0d:00:06:57 | ##------------------ |   8/100 | 0.22       Step: 8, Current Hamiltoninian: tensor([[29.2523]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.1727]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:45 | 0d:00:06:58 | ##------------------ |   9/100 | 0.22       Step: 9, Current Hamiltoninian: tensor([[30.1735]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.1283]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:51 | 0d:00:06:58 | ##------------------ |  10/100 | 0.22       Step: 10, Current Hamiltoninian: tensor([[30.6151]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.5690]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:00:56 | 0d:00:06:57 | ##------------------ |  11/100 | 0.21       Step: 11, Current Hamiltoninian: tensor([[28.1889]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.1777]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:01 | 0d:00:06:57 | ##------------------ |  12/100 | 0.21       Step: 12, Current Hamiltoninian: tensor([[29.7693]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.7319]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:06 | 0d:00:06:55 | ###----------------- |  13/100 | 0.21       Step: 13, Current Hamiltoninian: tensor([[28.7295]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.7249]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:12 | 0d:00:06:54 | ###----------------- |  14/100 | 0.21       Step: 14, Current Hamiltoninian: tensor([[35.6738]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[35.6059]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:18 | 0d:00:06:54 | ###----------------- |  15/100 | 0.20       Step: 15, Current Hamiltoninian: tensor([[34.3420]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.3287]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:23 | 0d:00:06:53 | ###----------------- |  16/100 | 0.20       Step: 16, Current Hamiltoninian: tensor([[32.9516]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.8815]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:29 | 0d:00:06:51 | ###----------------- |  17/100 | 0.20       Step: 17, Current Hamiltoninian: tensor([[37.9616]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[37.7170]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:34 | 0d:00:06:48 | ####---------------- |  18/100 | 0.20       Step: 18, Current Hamiltoninian: tensor([[32.9385]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.0352]], grad_fn=<AddBackward0>)
+Accept rho: -0.0966339111328125
+0d:00:01:38 | 0d:00:06:40 | ####---------------- |  19/100 | 0.20       Step: 19, Current Hamiltoninian: tensor([[32.5127]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.5196]], grad_fn=<AddBackward0>)
+Accept rho: -0.0069580078125
+0d:00:01:42 | 0d:00:06:32 | ####---------------- |  20/100 | 0.20       Step: 20, Current Hamiltoninian: tensor([[31.6699]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.6641]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:48 | 0d:00:06:28 | ####---------------- |  21/100 | 0.20       Step: 21, Current Hamiltoninian: tensor([[29.4012]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.3889]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:52 | 0d:00:06:20 | ####---------------- |  22/100 | 0.20       Step: 22, Current Hamiltoninian: tensor([[37.4946]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[37.4716]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:01:56 | 0d:00:06:14 | #####--------------- |  23/100 | 0.21       Step: 23, Current Hamiltoninian: tensor([[33.1200]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.2725]], grad_fn=<AddBackward0>)
+Accept rho: -0.15250778198242188
+0d:00:02:00 | 0d:00:06:06 | #####--------------- |  24/100 | 0.21       Step: 24, Current Hamiltoninian: tensor([[36.5408]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[37.0382]], grad_fn=<AddBackward0>)
+Accept rho: -0.4973297119140625
+0d:00:02:04 | 0d:00:05:58 | #####--------------- |  25/100 | 0.21       Invalid log_prob: -inf, params: tensor([-1.3784e+08, -1.3661e+04,  2.0536e+05,  4.2142e+05, -2.9765e+05,
+         6.4735e+05, -4.7424e+05, -1.1406e+05, -3.4026e+05,  5.9696e+05,
+        -1.6263e+04], requires_grad=True)
+REJECT
+0d:00:02:05 | 0d:00:05:43 | #####--------------- |  26/100 | 0.22       Invalid hessian: tensor([[        inf, -1.3075e+15, -1.3419e+16, -7.5779e+15,  1.1700e+16,
+         -4.8917e+15, -4.2601e+15,  3.8002e+15,  9.5478e+14, -8.7199e+15,
+         -2.8888e+15],
+        [-1.3075e+15,  2.3705e+14, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.3419e+16, -0.0000e+00,  2.3705e+14, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-7.5779e+15, -0.0000e+00, -0.0000e+00,  2.3705e+14, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 1.1700e+16, -0.0000e+00, -0.0000e+00, -0.0000e+00,  2.3705e+14,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-4.8917e+15, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          2.3705e+14, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-4.2601e+15, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00,  2.3705e+14, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 3.8002e+15, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00,  2.3705e+14, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 9.5478e+14, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00,  2.3705e+14, -0.0000e+00,
+         -0.0000e+00],
+        [-8.7199e+15, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,  2.3705e+14,
+         -0.0000e+00],
+        [-2.8888e+15, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          2.3705e+14]], grad_fn=<NegBackward>), params: tensor([ 33.0993,  -5.5157, -56.6097, -31.9682,  49.3563, -20.6362, -17.9715,
+         16.0316,   4.0278, -36.7855, -12.1865], requires_grad=True)
+REJECT
+0d:00:02:05 | 0d:00:05:27 | #####--------------- |  27/100 | 0.22       Step: 27, Current Hamiltoninian: tensor([[30.2245]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.8955]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:09 | 0d:00:05:20 | ######-------------- |  28/100 | 0.22       Step: 28, Current Hamiltoninian: tensor([[31.7428]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.6825]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:13 | 0d:00:05:14 | ######-------------- |  29/100 | 0.23       Step: 29, Current Hamiltoninian: tensor([[31.9510]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.9690]], grad_fn=<AddBackward0>)
+Accept rho: -0.01801300048828125
+0d:00:02:16 | 0d:00:05:08 | ######-------------- |  30/100 | 0.23       Step: 30, Current Hamiltoninian: tensor([[29.9230]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.9881]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:20 | 0d:00:05:02 | ######-------------- |  31/100 | 0.23       Step: 31, Current Hamiltoninian: tensor([[34.6523]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.6531]], grad_fn=<AddBackward0>)
+Accept rho: -0.000835418701171875
+0d:00:02:24 | 0d:00:04:56 | ######-------------- |  32/100 | 0.23       Step: 32, Current Hamiltoninian: tensor([[32.3115]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.0572]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:27 | 0d:00:04:51 | #######------------- |  33/100 | 0.23       Step: 33, Current Hamiltoninian: tensor([[32.1177]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.9269]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:31 | 0d:00:04:46 | #######------------- |  34/100 | 0.23       Step: 34, Current Hamiltoninian: tensor([[28.5389]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.9881]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:35 | 0d:00:04:40 | #######------------- |  35/100 | 0.23       Step: 35, Current Hamiltoninian: tensor([[33.9022]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.3163]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:39 | 0d:00:04:35 | #######------------- |  36/100 | 0.23       Step: 36, Current Hamiltoninian: tensor([[28.6358]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.6050]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:43 | 0d:00:04:30 | #######------------- |  37/100 | 0.23       Step: 37, Current Hamiltoninian: tensor([[28.1390]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.1609]], grad_fn=<AddBackward0>)
+Accept rho: -0.021863937377929688
+0d:00:02:46 | 0d:00:04:25 | ########------------ |  38/100 | 0.23       Step: 38, Current Hamiltoninian: tensor([[30.5992]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.6037]], grad_fn=<AddBackward0>)
+Accept rho: -0.00455474853515625
+0d:00:02:50 | 0d:00:04:20 | ########------------ |  39/100 | 0.23       Step: 39, Current Hamiltoninian: tensor([[26.3673]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.3584]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:54 | 0d:00:04:15 | ########------------ |  40/100 | 0.24       Step: 40, Current Hamiltoninian: tensor([[25.8789]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[25.6976]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:02:58 | 0d:00:04:10 | ########------------ |  41/100 | 0.24       Step: 41, Current Hamiltoninian: tensor([[28.0141]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.3444]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:02 | 0d:00:04:05 | ########------------ |  42/100 | 0.24       Step: 42, Current Hamiltoninian: tensor([[33.2462]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.7939]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:05 | 0d:00:04:00 | #########----------- |  43/100 | 0.24       Step: 43, Current Hamiltoninian: tensor([[26.6446]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.7005]], grad_fn=<AddBackward0>)
+Accept rho: -0.05594825744628906
+0d:00:03:09 | 0d:00:03:55 | #########----------- |  44/100 | 0.24       Step: 44, Current Hamiltoninian: tensor([[28.2861]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.2974]], grad_fn=<AddBackward0>)
+Accept rho: -0.011301040649414062
+0d:00:03:13 | 0d:00:03:51 | #########----------- |  45/100 | 0.24       Step: 45, Current Hamiltoninian: tensor([[27.7260]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.2116]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:17 | 0d:00:03:46 | #########----------- |  46/100 | 0.24       Step: 46, Current Hamiltoninian: tensor([[31.7058]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[48.4544]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:03:20 | 0d:00:03:41 | #########----------- |  47/100 | 0.24       Step: 47, Current Hamiltoninian: tensor([[26.5872]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.4651]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:24 | 0d:00:03:37 | ##########---------- |  48/100 | 0.24       Step: 48, Current Hamiltoninian: tensor([[27.4686]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.3818]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:29 | 0d:00:03:33 | ##########---------- |  49/100 | 0.24       Step: 49, Current Hamiltoninian: tensor([[27.3649]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.2641]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:33 | 0d:00:03:29 | ##########---------- |  50/100 | 0.24       Step: 50, Current Hamiltoninian: tensor([[26.5542]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.5903]], grad_fn=<AddBackward0>)
+Accept rho: -0.03603553771972656
+0d:00:03:37 | 0d:00:03:24 | ##########---------- |  51/100 | 0.24       Step: 51, Current Hamiltoninian: tensor([[33.2713]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.6005]], grad_fn=<AddBackward0>)
+Accept rho: -0.3291664123535156
+0d:00:03:41 | 0d:00:03:20 | ##########---------- |  52/100 | 0.24       Step: 52, Current Hamiltoninian: tensor([[30.7940]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.7737]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:44 | 0d:00:03:15 | ###########--------- |  53/100 | 0.24       Step: 53, Current Hamiltoninian: tensor([[28.5611]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.5423]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:03:48 | 0d:00:03:11 | ###########--------- |  54/100 | 0.24       Step: 54, Current Hamiltoninian: tensor([[29.0271]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.0526]], grad_fn=<AddBackward0>)
+Accept rho: -0.025491714477539062
+0d:00:03:52 | 0d:00:03:06 | ###########--------- |  55/100 | 0.24       Step: 55, Current Hamiltoninian: tensor([[36.0309]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[36.0451]], grad_fn=<AddBackward0>)
+Accept rho: -0.014225006103515625
+0d:00:03:56 | 0d:00:03:02 | ###########--------- |  56/100 | 0.24       Step: 56, Current Hamiltoninian: tensor([[31.8371]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.7963]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:00 | 0d:00:02:58 | ###########--------- |  57/100 | 0.24       Step: 57, Current Hamiltoninian: tensor([[34.1945]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.9348]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:04 | 0d:00:02:53 | ############-------- |  58/100 | 0.24       Step: 58, Current Hamiltoninian: tensor([[37.0587]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[37.0415]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:08 | 0d:00:02:49 | ############-------- |  59/100 | 0.24       Step: 59, Current Hamiltoninian: tensor([[33.0579]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.9937]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:11 | 0d:00:02:45 | ############-------- |  60/100 | 0.24       Step: 60, Current Hamiltoninian: tensor([[31.4680]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.4535]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:15 | 0d:00:02:40 | ############-------- |  61/100 | 0.24       Step: 61, Current Hamiltoninian: tensor([[32.4619]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.4574]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:19 | 0d:00:02:36 | ############-------- |  62/100 | 0.24       Step: 62, Current Hamiltoninian: tensor([[32.5936]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.6054]], grad_fn=<AddBackward0>)
+Accept rho: -0.011806488037109375
+0d:00:04:23 | 0d:00:02:32 | #############------- |  63/100 | 0.24       Step: 63, Current Hamiltoninian: tensor([[34.2390]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.0895]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:27 | 0d:00:02:28 | #############------- |  64/100 | 0.24       Step: 64, Current Hamiltoninian: tensor([[37.0571]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[36.7935]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:31 | 0d:00:02:23 | #############------- |  65/100 | 0.24       Step: 65, Current Hamiltoninian: tensor([[30.0449]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.9638]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:35 | 0d:00:02:19 | #############------- |  66/100 | 0.24       Step: 66, Current Hamiltoninian: tensor([[28.8612]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.8397]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:39 | 0d:00:02:15 | #############------- |  67/100 | 0.24       Step: 67, Current Hamiltoninian: tensor([[27.1515]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.1102]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:42 | 0d:00:02:11 | ##############------ |  68/100 | 0.24       Step: 68, Current Hamiltoninian: tensor([[27.7188]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.6478]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:46 | 0d:00:02:06 | ##############------ |  69/100 | 0.24       Step: 69, Current Hamiltoninian: tensor([[23.7557]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[23.6579]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:50 | 0d:00:02:02 | ##############------ |  70/100 | 0.24       Step: 70, Current Hamiltoninian: tensor([[26.6129]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.6690]], grad_fn=<AddBackward0>)
+Accept rho: -0.05617523193359375
+0d:00:04:54 | 0d:00:01:58 | ##############------ |  71/100 | 0.24       Step: 71, Current Hamiltoninian: tensor([[25.6774]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[25.6709]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:04:59 | 0d:00:01:54 | ##############------ |  72/100 | 0.24       Step: 72, Current Hamiltoninian: tensor([[26.3017]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.3244]], grad_fn=<AddBackward0>)
+Accept rho: -0.022764205932617188
+0d:00:05:04 | 0d:00:01:51 | ###############----- |  73/100 | 0.24       Step: 73, Current Hamiltoninian: tensor([[27.3102]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.4085]], grad_fn=<AddBackward0>)
+Accept rho: -0.09828567504882812
+0d:00:05:09 | 0d:00:01:47 | ###############----- |  74/100 | 0.24       Step: 74, Current Hamiltoninian: tensor([[33.9701]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.4786]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:13 | 0d:00:01:42 | ###############----- |  75/100 | 0.24       Step: 75, Current Hamiltoninian: tensor([[34.8111]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.6732]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:17 | 0d:00:01:38 | ###############----- |  76/100 | 0.24       Step: 76, Current Hamiltoninian: tensor([[34.3187]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.7595]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:21 | 0d:00:01:34 | ###############----- |  77/100 | 0.24       Step: 77, Current Hamiltoninian: tensor([[38.4764]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[39.1277]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:05:25 | 0d:00:01:30 | ################---- |  78/100 | 0.24       Step: 78, Current Hamiltoninian: tensor([[37.0809]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[37.1441]], grad_fn=<AddBackward0>)
+Accept rho: -0.06317138671875
+0d:00:05:29 | 0d:00:01:26 | ################---- |  79/100 | 0.24       Step: 79, Current Hamiltoninian: tensor([[30.5097]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.5395]], grad_fn=<AddBackward0>)
+Accept rho: -0.029741287231445312
+0d:00:05:34 | 0d:00:01:22 | ################---- |  80/100 | 0.24       Step: 80, Current Hamiltoninian: tensor([[28.1832]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.1593]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:38 | 0d:00:01:18 | ################---- |  81/100 | 0.24       Step: 81, Current Hamiltoninian: tensor([[31.4961]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.4467]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:42 | 0d:00:01:14 | ################---- |  82/100 | 0.24       Step: 82, Current Hamiltoninian: tensor([[34.0663]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.0548]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:46 | 0d:00:01:10 | #################--- |  83/100 | 0.24       Step: 83, Current Hamiltoninian: tensor([[38.1661]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[38.1189]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:50 | 0d:00:01:05 | #################--- |  84/100 | 0.24       Step: 84, Current Hamiltoninian: tensor([[32.5452]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.5047]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:54 | 0d:00:01:01 | #################--- |  85/100 | 0.24       Step: 85, Current Hamiltoninian: tensor([[33.9920]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.8688]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:05:58 | 0d:00:00:57 | #################--- |  86/100 | 0.24       Step: 86, Current Hamiltoninian: tensor([[31.0250]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.6640]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:02 | 0d:00:00:53 | #################--- |  87/100 | 0.24       Step: 87, Current Hamiltoninian: tensor([[33.0871]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.1267]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:06:06 | 0d:00:00:49 | ##################-- |  88/100 | 0.24       Step: 88, Current Hamiltoninian: tensor([[34.9310]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.8121]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:10 | 0d:00:00:45 | ##################-- |  89/100 | 0.24       Step: 89, Current Hamiltoninian: tensor([[41.1037]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[47.1076]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:06:14 | 0d:00:00:41 | ##################-- |  90/100 | 0.24       Step: 90, Current Hamiltoninian: tensor([[32.8125]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.8426]], grad_fn=<AddBackward0>)
+Accept rho: -0.030033111572265625
+0d:00:06:18 | 0d:00:00:36 | ##################-- |  91/100 | 0.24       Step: 91, Current Hamiltoninian: tensor([[27.6105]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.4805]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:21 | 0d:00:00:32 | ##################-- |  92/100 | 0.24       Step: 92, Current Hamiltoninian: tensor([[25.9831]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.0263]], grad_fn=<AddBackward0>)
+Accept rho: -0.04326629638671875
+0d:00:06:25 | 0d:00:00:28 | ###################- |  93/100 | 0.24       Step: 93, Current Hamiltoninian: tensor([[31.7177]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.1567]], grad_fn=<AddBackward0>)
+Accept rho: -0.4389629364013672
+0d:00:06:29 | 0d:00:00:24 | ###################- |  94/100 | 0.24       Step: 94, Current Hamiltoninian: tensor([[35.6867]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[136.7618]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:06:33 | 0d:00:00:20 | ###################- |  95/100 | 0.24       Step: 95, Current Hamiltoninian: tensor([[33.3468]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.2357]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:37 | 0d:00:00:16 | ###################- |  96/100 | 0.24       Step: 96, Current Hamiltoninian: tensor([[27.9579]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.9343]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:41 | 0d:00:00:12 | ###################- |  97/100 | 0.24       Step: 97, Current Hamiltoninian: tensor([[26.3465]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[26.3299]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:45 | 0d:00:00:08 | #################### |  98/100 | 0.24       Step: 98, Current Hamiltoninian: tensor([[28.1659]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.1242]], grad_fn=<AddBackward0>)
+Accept rho: 0.0
+0d:00:06:49 | 0d:00:00:04 | #################### |  99/100 | 0.24       Step: 99, Current Hamiltoninian: tensor([[30.3962]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[30.4280]], grad_fn=<AddBackward0>)
+Accept rho: -0.03180694580078125
+0d:00:06:52 | 0d:00:00:00 | #################### | 100/100 | 0.24       No handles with labels found to put in legend.
+
+Acceptance Rate 0.90
+process time : 6474.132651366 seconds
