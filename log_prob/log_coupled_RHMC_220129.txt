@@ -1,0 +1,870 @@
+torch.Size([2, 11])
+tensor([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+        [1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.]])
+torch.Size([2, 11])
+tensor([[0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+        [0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.]])
+Sampling (Sampler.RMHMC; Integrator.EXPLICIT)
+Time spent  | Time remain.| Progress             | Samples | Samples/sec
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.63 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.63 seconds
+i :  20
+j :  20
+Step: 0, Current Hamiltoninian: tensor([[15.8610]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.6620]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:05 | 0d:00:04:53 | -------------------- |   1/100 | 0.34       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.62 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.75 seconds
+i :  20
+j :  20
+Step: 1, Current Hamiltoninian: tensor([[15.6363]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.2591]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:11 | 0d:00:06:30 | -------------------- |   2/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.73 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.78 seconds
+i :  15
+j :  15
+Step: 2, Current Hamiltoninian: tensor([[18.4164]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[36.7526]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:18 | 0d:00:07:20 | #------------------- |   3/100 | 0.22       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.84 seconds
+i :  13
+j :  13
+Step: 3, Current Hamiltoninian: tensor([[18.6052]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[37.2978]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:24 | 0d:00:07:49 | #------------------- |   4/100 | 0.20       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.83 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.86 seconds
+i :  22
+j :  22
+Step: 4, Current Hamiltoninian: tensor([[16.8936]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.7700]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:30 | 0d:00:08:07 | #------------------- |   5/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.78 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.90 seconds
+i :  17
+j :  17
+Step: 5, Current Hamiltoninian: tensor([[13.7296]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.5499]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:37 | 0d:00:08:19 | #------------------- |   6/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.94 seconds
+i :  16
+j :  16
+Step: 6, Current Hamiltoninian: tensor([[11.9456]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[23.9463]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:43 | 0d:00:08:27 | #------------------- |   7/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+i :  21
+j :  21
+Step: 7, Current Hamiltoninian: tensor([[12.3350]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[24.6899]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:49 | 0d:00:08:30 | ##------------------ |   8/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.73 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.85 seconds
+i :  5
+j :  5
+Step: 8, Current Hamiltoninian: tensor([[13.5336]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.1479]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:00:56 | 0d:00:08:31 | ##------------------ |   9/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.83 seconds
+i :  8
+j :  8
+Step: 9, Current Hamiltoninian: tensor([[14.4730]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.8808]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:01:02 | 0d:00:08:31 | ##------------------ |  10/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.78 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.82 seconds
+i :  0
+j :  0
+Step: 10, Current Hamiltoninian: tensor([[14.1029]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.2227]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:01:08 | 0d:00:08:30 | ##------------------ |  11/100 | 0.17       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.78 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.85 seconds
+i :  13
+j :  13
+Step: 11, Current Hamiltoninian: tensor([[14.3764]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[28.7239]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:01:15 | 0d:00:08:28 | ##------------------ |  12/100 | 0.17       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-190.9607,    5.3277,   -5.0665,    7.4191,    0.6105,    7.5324,
+         -11.1082,    2.3192,   -5.9978,   -3.6887,  -11.5619],
+       requires_grad=True)
+REJECT
+0d:00:01:17 | 0d:00:08:03 | ###----------------- |  13/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.86 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.92 seconds
+i :  23
+j :  23
+Step: 13, Current Hamiltoninian: tensor([[16.8819]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[33.8598]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:01:24 | 0d:00:08:03 | ###----------------- |  14/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.88 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([   1918.7577,  -33212.7617,   -2312.8215,   59763.1250,  -57567.6445,
+           9224.6045,   30665.4707,   -1491.4728,  -21171.8770, -727422.7500,
+        -143504.4688], requires_grad=True)
+REJECT
+0d:00:01:28 | 0d:00:07:51 | ###----------------- |  15/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.83 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([  475.5333,  4559.1079,  2020.6208, -5833.3340,  6294.8906,  1091.6748,
+        -3760.5801,  -429.7684,  3933.0991,  8378.3105, 10881.7129],
+       requires_grad=True)
+REJECT
+0d:00:01:33 | 0d:00:07:40 | ###----------------- |  16/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.76 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid hessian: tensor([[        nan,  1.5266e+24, -3.3352e+24, -1.3122e+24,  2.8298e+24,
+         -1.7566e+23, -2.5014e+24, -2.8842e+24, -2.3300e+24,  4.6310e+24,
+          2.2245e+24],
+        [ 1.5266e+24,  1.8881e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-3.3352e+24, -0.0000e+00,  1.8881e+21, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.3122e+24, -0.0000e+00, -0.0000e+00,  1.8881e+21, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 2.8298e+24, -0.0000e+00, -0.0000e+00, -0.0000e+00,  1.8881e+21,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.7566e+23, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          1.8881e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-2.5014e+24, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00,  1.8881e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-2.8842e+24, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00,  1.8881e+21, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-2.3300e+24, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00,  1.8881e+21, -0.0000e+00,
+         -0.0000e+00],
+        [ 4.6310e+24, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,  1.8881e+21,
+         -0.0000e+00],
+        [ 2.2245e+24, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          1.8881e+21]], grad_fn=<NegBackward>), params: tensor([   48.9899,   808.5093, -1766.3987,  -694.9804,  1498.7473,   -93.0343,
+        -1324.8080, -1527.5085, -1234.0405,  2452.6726,  1178.1179],
+       requires_grad=True)
+REJECT
+0d:00:01:39 | 0d:00:07:37 | ###----------------- |  17/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 3.07 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([    372.8654,  -40211.1328,  -25296.2168,   34547.8711, -283412.0625,
+          -8873.5732,  161670.6719,   20296.7598, -171954.2188, -116755.5547,
+         -77527.8516], requires_grad=True)
+REJECT
+0d:00:01:44 | 0d:00:07:29 | ####---------------- |  18/100 | 0.18       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:01:44 | 0d:00:07:04 | ####---------------- |  19/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.93 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:01:49 | 0d:00:06:56 | ####---------------- |  20/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.85 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:01:55 | 0d:00:06:54 | ####---------------- |  21/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 3.07 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-1.1310e+03, -1.9169e+01, -1.1492e+01,  4.9895e+01, -2.3855e+01,
+         1.7653e+00, -3.5121e+00,  7.8839e-01, -2.9121e+01, -1.2181e+01,
+        -2.1500e+01], requires_grad=True)
+REJECT
+0d:00:02:00 | 0d:00:06:48 | ####---------------- |  22/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -456.2793,  3700.8684,  7189.8579, -7326.6650, -1044.8052,  1840.7177,
+        17608.4570,   718.1636,  2767.7844,  3602.5398,  7893.1406],
+       requires_grad=True)
+REJECT
+0d:00:02:00 | 0d:00:06:27 | #####--------------- |  23/100 | 0.20       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 3.10 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.88 seconds
+i :  21
+j :  21
+Step: 23, Current Hamiltoninian: tensor([[14.4130]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.9149]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:07 | 0d:00:06:27 | #####--------------- |  24/100 | 0.20       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.93 seconds
+i :  18
+j :  18
+Step: 24, Current Hamiltoninian: tensor([[13.7791]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[323.2430]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:13 | 0d:00:06:25 | #####--------------- |  25/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([  616.8704, -4718.2236,   951.6984, -1153.2229, 13075.8867, -4230.0083,
+        10888.4170,  1835.4825,  5682.9424, 18718.3750,  4207.8838],
+       requires_grad=True)
+REJECT
+0d:00:02:18 | 0d:00:06:19 | #####--------------- |  26/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([  4278.4976,  -5943.2837,   3740.6846, -11042.4209,  28218.0215,
+        -13095.3213,  36694.3008,  -5145.6221,   5257.3721,  15459.0283,
+         18840.5332], requires_grad=True)
+REJECT
+0d:00:02:23 | 0d:00:06:14 | #####--------------- |  27/100 | 0.20       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.85 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid hessian: tensor([[        nan, -6.9174e+19, -5.3170e+19, -1.7490e+20,  2.0177e+20,
+         -1.6048e+20,  3.9083e+20, -1.7046e+20,  1.2851e+20,  3.9854e+20,
+          1.4474e+20],
+        [-6.9174e+19,  1.8215e+18, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-5.3170e+19, -0.0000e+00,  1.8215e+18, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.7490e+20, -0.0000e+00, -0.0000e+00,  1.8215e+18, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 2.0177e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00,  1.8215e+18,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.6048e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          1.8215e+18, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 3.9083e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00,  1.8215e+18, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.7046e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00,  1.8215e+18, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 1.2851e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00,  1.8215e+18, -0.0000e+00,
+         -0.0000e+00],
+        [ 3.9854e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,  1.8215e+18,
+         -0.0000e+00],
+        [ 1.4474e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          1.8215e+18]], grad_fn=<NegBackward>), params: tensor([ 42.0462, -37.9764, -29.1898, -96.0195, 110.7732, -88.1014, 214.5648,
+        -93.5817,  70.5526, 218.7973,  79.4636], requires_grad=True)
+REJECT
+0d:00:02:28 | 0d:00:06:08 | ######-------------- |  28/100 | 0.20       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.84 seconds
+i :  21
+j :  21
+Step: 28, Current Hamiltoninian: tensor([[66.5321]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[124.3052]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:34 | 0d:00:06:06 | ######-------------- |  29/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+i :  18
+j :  18
+Step: 29, Current Hamiltoninian: tensor([[44.1242]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[86.9849]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:41 | 0d:00:06:03 | ######-------------- |  30/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.78 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.82 seconds
+i :  24
+j :  24
+Step: 30, Current Hamiltoninian: tensor([[16.0943]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.1595]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:47 | 0d:00:06:00 | ######-------------- |  31/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-156983.5469,   -9149.6104,   14191.7959,   -3866.5693,    8701.1377,
+         -30034.2695,    4905.3843,   -1676.2677,  -42613.5234,   39795.3789,
+         -16302.4492], requires_grad=True)
+REJECT
+0d:00:02:49 | 0d:00:05:50 | ######-------------- |  32/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.76 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.85 seconds
+i :  5
+j :  5
+Step: 32, Current Hamiltoninian: tensor([[18.4810]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[36.9127]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:02:56 | 0d:00:05:47 | #######------------- |  33/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 3.10 seconds
+i :  19
+j :  19
+Step: 33, Current Hamiltoninian: tensor([[18.3648]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[35.3325]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:03:02 | 0d:00:05:45 | #######------------- |  34/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:03:08 | 0d:00:05:41 | #######------------- |  35/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -3067.6621,  -2909.5095,  10606.6289,  65770.5391,  -2684.7104,
+         64658.8320, 114177.1016,  -8447.2109, -33510.4883,  59391.9609,
+         64486.7422], requires_grad=True)
+REJECT
+0d:00:03:10 | 0d:00:05:29 | #######------------- |  36/100 | 0.19       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-1.7631e+07, -9.4334e+03,  4.7274e+02, -8.1467e+02, -1.4941e+03,
+         5.0573e+03,  1.4615e+04,  1.1923e+04,  3.2418e+03,  1.5484e+04,
+        -2.0287e+04], requires_grad=True)
+REJECT
+0d:00:03:12 | 0d:00:05:19 | #######------------- |  37/100 | 0.20       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-9.8691e+03,  9.1033e+01, -2.2312e+02,  6.4983e+01,  1.3018e+01,
+         4.3694e+00, -6.2030e+01,  1.5274e+02,  2.0702e+02, -8.7712e+01,
+         1.2990e+02], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([ 658.8448,  -60.1062,   38.4420,   47.0419,   33.7821,  134.0574,
+        -208.4503,  -51.2206,  -83.1976,  -78.7292,  -42.9274],
+       requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-5.2287e+05, -6.9479e+02,  3.3835e+02,  3.7140e+02, -5.5254e+00,
+         1.0404e+01, -4.3496e+02, -2.8571e+02,  2.2834e+01,  7.7012e+01,
+         1.3610e+03], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -449.0088,  3536.2122,  -454.0584,  -223.1754,  4590.1240, -2002.0095,
+        -1928.8884, -1508.2369, -1424.2130, -1564.0436, -1914.6410],
+       requires_grad=True)
+REJECT
+0d:00:03:18 | 0d:00:04:39 | ########------------ |  41/100 | 0.21       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([1016.7383, -164.4370, -139.2615,   -2.1525,  177.9445, -258.4034,
+         -23.3034,   53.8162,  -62.1069,   59.5405,   78.5287],
+       requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:03:23 | 0d:00:04:23 | #########----------- |  43/100 | 0.22       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-8.7582e+05,  1.7111e+03,  1.3736e+03, -1.4409e+03,  4.8826e+02,
+         3.9859e+02,  5.1872e+02, -4.4079e+02, -5.1595e+02,  8.6247e+02,
+        -3.5955e+02], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.82 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.90 seconds
+i :  11
+j :  11
+Step: 44, Current Hamiltoninian: tensor([[15.7021]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[29.4316]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:03:30 | 0d:00:04:11 | #########----------- |  45/100 | 0.22       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-8.9026e+03, -1.6169e+00, -1.0902e+02, -5.5580e+01, -2.6492e+01,
+        -1.0840e+02, -1.1779e+00,  4.4549e+01, -5.8115e+01,  5.3376e+01,
+        -1.6006e+01], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.84 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:03:34 | 0d:00:03:56 | #########----------- |  47/100 | 0.22       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+i :  14
+j :  14
+Step: 47, Current Hamiltoninian: tensor([[12.7812]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[24.6784]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:03:40 | 0d:00:03:53 | ##########---------- |  48/100 | 0.22       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:03:40 | 0d:00:03:45 | ##########---------- |  49/100 | 0.23       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:03:44 | 0d:00:03:40 | ##########---------- |  50/100 | 0.23       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -491.2462,    87.0557,   650.7584, -3072.8481,   217.6133,  -499.7605,
+        -1224.5153,    77.8896, -1084.2944,   352.0147, -2632.7083],
+       requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-119.9665,   -3.6610,  -22.2416,   22.3521,  -20.8441,   28.9955,
+          18.8349,   17.3821,    0.5886,  -42.5496,   -6.5175],
+       requires_grad=True)
+REJECT
+0d:00:03:45 | 0d:00:03:23 | ##########---------- |  52/100 | 0.24       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.80 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:03:48 | 0d:00:03:19 | ###########--------- |  53/100 | 0.24       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-164.5119,  -13.6607,  105.9229,  125.4866,  -35.0940,    3.6123,
+          76.0783, -226.4520, -213.0725,   45.2782,  -85.9740],
+       requires_grad=True)
+REJECT
+0d:00:03:51 | 0d:00:03:13 | ###########--------- |  54/100 | 0.24       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.88 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([ 1.2902e+02, -3.6727e+06, -8.2364e+04, -1.1278e+05, -2.2996e+07,
+         1.9895e+06,  3.6666e+05,  2.8165e+05, -4.1213e+05,  1.0655e+05,
+        -1.5411e+04], requires_grad=True)
+REJECT
+0d:00:03:56 | 0d:00:03:10 | ###########--------- |  55/100 | 0.24       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-3.6171e+04, -1.7042e+02,  1.7747e+02, -2.6109e+01, -4.3010e+01,
+         2.4065e+02,  9.1155e+00,  2.7715e+02, -4.1098e+02,  7.6876e+02,
+        -4.7727e+02], requires_grad=True)
+REJECT
+0d:00:03:57 | 0d:00:03:03 | ###########--------- |  56/100 | 0.24       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid hessian: tensor([[        nan,  6.1789e+22, -2.2639e+22,  3.9476e+22, -5.8877e+22,
+          1.3928e+23, -6.9878e+22, -8.1712e+22,  5.0621e+22,  1.3093e+23,
+         -4.3322e+22],
+        [ 6.1789e+22,  2.4386e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-2.2639e+22, -0.0000e+00,  2.4386e+21, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 3.9476e+22, -0.0000e+00, -0.0000e+00,  2.4386e+21, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-5.8877e+22, -0.0000e+00, -0.0000e+00, -0.0000e+00,  2.4386e+21,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 1.3928e+23, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          2.4386e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-6.9878e+22, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00,  2.4386e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-8.1712e+22, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00,  2.4386e+21, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 5.0621e+22, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00,  2.4386e+21, -0.0000e+00,
+         -0.0000e+00],
+        [ 1.3093e+23, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,  2.4386e+21,
+         -0.0000e+00],
+        [-4.3322e+22, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          2.4386e+21]], grad_fn=<NegBackward>), params: tensor([ 49.2457,  25.3376,  -9.2834,  16.1880, -24.1435,  57.1137, -28.6549,
+        -33.5076,  20.7580,  53.6903, -17.7648], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -362.8373,    87.8463,    19.7259,  -901.7702,   697.5699,   -64.3196,
+         -223.3326,   302.1949, -1072.7545,   823.4893, -4239.3564],
+       requires_grad=True)
+REJECT
+0d:00:03:57 | 0d:00:02:49 | ############-------- |  58/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-274.0155,  128.8560, -294.5047, -433.0562,    4.5459, -344.1361,
+        -250.3251,  606.5193, -557.8671,  377.9061,  -51.7286],
+       requires_grad=True)
+REJECT
+0d:00:03:59 | 0d:00:02:43 | ############-------- |  59/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-2.8183e+02,  2.5853e+01,  3.4486e+01,  1.8728e+01, -3.5082e+01,
+         1.5902e+01, -8.8332e+00,  1.0692e+01,  1.2401e+01, -3.5962e+01,
+        -3.0128e-02], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-2427.3843,   124.0514,   100.6522,   -35.5911,   155.6768,   -65.7175,
+           21.7062,    23.2423,    55.4410,   -41.2775,    96.7092],
+       requires_grad=True)
+REJECT
+0d:00:03:59 | 0d:00:02:30 | ############-------- |  61/100 | 0.26       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:04 | 0d:00:02:27 | ############-------- |  62/100 | 0.26       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.79 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 3.01 seconds
+i :  1
+j :  1
+Step: 62, Current Hamiltoninian: tensor([[12.9542]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[25.8534]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:04:10 | 0d:00:02:25 | #############------- |  63/100 | 0.26       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.81 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.81 seconds
+i :  22
+j :  22
+Step: 63, Current Hamiltoninian: tensor([[17.1474]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[32.2318]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:04:17 | 0d:00:02:22 | #############------- |  64/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.77 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.87 seconds
+i :  8
+j :  8
+Step: 64, Current Hamiltoninian: tensor([[17.0995]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[34.1115]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:04:23 | 0d:00:02:19 | #############------- |  65/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.81 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.82 seconds
+i :  15
+j :  15
+Step: 65, Current Hamiltoninian: tensor([[17.6844]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[35.4797]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:04:30 | 0d:00:02:17 | #############------- |  66/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.87 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.91 seconds
+i :  21
+j :  21
+Step: 66, Current Hamiltoninian: tensor([[15.9583]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[31.9348]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:04:36 | 0d:00:02:14 | #############------- |  67/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.88 seconds
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+leap frog process time : 2.89 seconds
+i :  24
+j :  14
+Step: 67, Current Hamiltoninian: tensor([[13.7717]], grad_fn=<DivBackward0>), Proposed Hamiltoninian: tensor([[27.4986]], grad_fn=<AddBackward0>)
+REJECT
+0d:00:04:43 | 0d:00:02:11 | ##############------ |  68/100 | 0.24       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([ 110.9311,  182.0312,   43.8321,  210.2551,  440.5275,   24.0698,
+         -70.2896,   21.1580,  -93.1945, -205.3191,    7.9370],
+       requires_grad=True)
+REJECT
+0d:00:04:43 | 0d:00:02:05 | ##############------ |  69/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-9.9721e+08, -2.5429e+06, -4.0257e+05, -7.8828e+05, -1.8674e+06,
+        -9.6988e+05, -1.6452e+05, -7.1225e+05,  4.7881e+05,  5.0678e+05,
+        -1.0579e+04], requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-1566.2325,   195.1062, -1331.3381,   130.0660,   664.7645,   123.6148,
+          -46.8013,    32.1756,    54.8265,  -177.8856,    54.5718],
+       requires_grad=True)
+REJECT
+0d:00:04:43 | 0d:00:01:54 | ##############------ |  71/100 | 0.25       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:44 | 0d:00:01:49 | ##############------ |  72/100 | 0.26       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-388.4070,  458.7857,   30.5006,  445.0787,   28.2062,  235.0202,
+        -151.8979, 3471.7720,   46.7685, -295.2727,  199.0771],
+       requires_grad=True)
+REJECT
+0d:00:04:45 | 0d:00:01:44 | ###############----- |  73/100 | 0.26       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -174.7987,   697.8044,    39.9485, -2036.9025,   164.7112,   199.9500,
+         -147.2677,    66.1959,  -448.4169,  -616.1758,    60.1325],
+       requires_grad=True)
+REJECT
+0d:00:04:45 | 0d:00:01:38 | ###############----- |  74/100 | 0.26       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:46 | 0d:00:01:34 | ###############----- |  75/100 | 0.27       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-7.9708e+08,  6.4839e+04,  8.3317e+04, -6.1860e+04, -2.0506e+05,
+        -7.6558e+03,  5.8931e+03, -9.6297e+03, -1.7176e+03, -3.6485e+03,
+        -2.0828e+02], requires_grad=True)
+REJECT
+0d:00:04:46 | 0d:00:01:29 | ###############----- |  76/100 | 0.27       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-9350.7051,   212.7357,  5077.6851,  1360.9677,  3505.4285,    14.3133,
+         -267.2962,  2282.2153,    28.5109,  -117.4977,   149.7380],
+       requires_grad=True)
+REJECT
+0d:00:04:47 | 0d:00:01:24 | ###############----- |  77/100 | 0.27       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:48 | 0d:00:01:20 | ################---- |  78/100 | 0.27       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-3.5419e+06, -8.3855e+01,  4.0056e+01, -8.1638e+01,  3.5955e+01,
+        -7.5611e+01,  2.3580e+01, -1.6683e+02,  3.9320e+01,  1.8813e+02,
+        -1.6888e+02], requires_grad=True)
+REJECT
+0d:00:04:48 | 0d:00:01:15 | ################---- |  79/100 | 0.28       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-4497.7510,   121.8834,   473.9607,   173.4615,  1005.8042,   241.6038,
+         -554.7004,  -352.8864,  -535.4358,   372.8997,  4238.1265],
+       requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:49 | 0d:00:01:07 | ################---- |  81/100 | 0.28       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-6.4579e+13, -3.9297e+07, -4.3037e+06, -4.9815e+07, -1.0928e+07,
+        -2.2942e+07,  4.1509e+07, -1.8135e+07,  4.0284e+07,  5.0542e+09,
+        -2.2189e+08], requires_grad=True)
+REJECT
+0d:00:04:49 | 0d:00:01:02 | ################---- |  82/100 | 0.29       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -931.7751,   198.2419,  1722.0221,   203.5498,   -55.4033,   -59.6742,
+        -1463.7084,  5775.5137,   902.5835,  3464.8389,  -142.7498],
+       requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-28586.6934,   1110.3945,    -72.3117,   -611.2125,    460.2186,
+        -13226.7354,   -281.9291,  -9992.5615,  -2039.6879,   -840.2438,
+           570.2759], requires_grad=True)
+REJECT
+0d:00:04:50 | 0d:00:00:54 | #################--- |  84/100 | 0.29       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-4137.8530,  -707.9185,    47.0597, -1348.8086,    48.3075,   258.7300,
+         -111.5801,   134.9554, -1061.9261,  -414.9943,    44.7945],
+       requires_grad=True)
+REJECT
+0d:00:04:50 | 0d:00:00:50 | #################--- |  85/100 | 0.30       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-1.2577e+05,  1.5999e+04,  1.6077e+03,  7.5751e+02, -4.6775e+02,
+         1.8490e+02, -4.1358e+00, -2.6976e+02, -2.4447e+01,  2.9194e+02,
+        -3.5495e+03], requires_grad=True)
+REJECT
+0d:00:04:51 | 0d:00:00:46 | #################--- |  86/100 | 0.30       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:51 | 0d:00:00:43 | #################--- |  87/100 | 0.30       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:52 | 0d:00:00:39 | ##################-- |  88/100 | 0.30       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-438.0778,  193.1896,   24.4009,  224.6948,   52.8535,   76.8494,
+         -12.8549,  305.7208, -213.3069, -156.2050,   23.9507],
+       requires_grad=True)
+REJECT
+********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid hessian: tensor([[        nan,  4.0104e+21,  2.3317e+20,  1.2651e+21,  2.4559e+20,
+         -1.5482e+21, -4.3028e+20,  3.6621e+20, -1.8119e+22, -9.3155e+20,
+         -4.2512e+20],
+        [ 4.0104e+21,  5.1391e+18, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 2.3317e+20, -0.0000e+00,  5.1391e+18, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 1.2651e+21, -0.0000e+00, -0.0000e+00,  5.1391e+18, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 2.4559e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00,  5.1391e+18,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.5482e+21, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          5.1391e+18, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-4.3028e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00,  5.1391e+18, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [ 3.6621e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00,  5.1391e+18, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00],
+        [-1.8119e+22, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00,  5.1391e+18, -0.0000e+00,
+         -0.0000e+00],
+        [-9.3155e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,  5.1391e+18,
+         -0.0000e+00],
+        [-4.2512e+20, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+         -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00, -0.0000e+00,
+          5.1391e+18]], grad_fn=<NegBackward>), params: tensor([   43.0834,   780.3713,    45.3709,   246.1801,    47.7883,  -301.2624,
+          -83.7265,    71.2599, -3525.7439,  -181.2679,   -82.7227],
+       requires_grad=True)
+REJECT
+0d:00:04:52 | 0d:00:00:32 | ##################-- |  90/100 | 0.31       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-9.8976e+01, -1.3537e+03, -2.5997e+03, -1.2801e+04,  2.2129e+03,
+        -4.7488e+01,  1.6431e+02, -1.3915e+05, -3.4386e+05, -1.0140e+04,
+         1.2550e+01], requires_grad=True)
+REJECT
+0d:00:04:52 | 0d:00:00:28 | ##################-- |  91/100 | 0.31       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: nan, params: tensor([ 3586.3452, -1335.0314, -1671.9304, -7263.6655, -1539.3866, -1098.1383,
+         1831.6783,  -186.4444,  1905.6331,  1085.5188, -1849.4875],
+       requires_grad=True)
+REJECT
+0d:00:04:53 | 0d:00:00:25 | ##################-- |  92/100 | 0.32       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-2.5974e+07, -3.6908e+03, -1.1520e+03, -3.6009e+03,  2.6507e+04,
+        -4.3927e+03,  1.8847e+03, -5.7563e+02,  4.6394e+03,  3.7652e+03,
+        -1.2471e+02], requires_grad=True)
+REJECT
+0d:00:04:53 | 0d:00:00:21 | ###################- |  93/100 | 0.32       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-2.8037e+07, -1.3869e+04,  4.2705e+04, -1.1887e+04,  1.4573e+04,
+        -6.5167e+03,  3.1105e+03, -6.0047e+03,  1.0893e+04, -1.8648e+04,
+        -3.9143e+03], requires_grad=True)
+REJECT
+0d:00:04:54 | 0d:00:00:18 | ###################- |  94/100 | 0.32       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Warning: reached jitter_max_tries 10
+REJECT
+0d:00:04:54 | 0d:00:00:15 | ###################- |  95/100 | 0.33       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-9.8559e+05,  1.8706e+02,  5.2703e+01, -3.6605e+02, -2.0467e+02,
+        -1.0174e+02, -1.5186e+02,  4.5934e+01, -3.9456e+02, -2.9388e+02,
+        -2.9744e+03], requires_grad=True)
+REJECT
+0d:00:04:54 | 0d:00:00:12 | ###################- |  96/100 | 0.33       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([ -473.8675,   153.8675,  -405.8351,   411.7425,  1027.7251,     2.6514,
+           65.2910, -2125.0623,  -261.5681,  -134.9656,    -8.5554],
+       requires_grad=True)
+REJECT
+0d:00:04:55 | 0d:00:00:09 | ###################- |  97/100 | 0.33       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-3.9486e+05,  2.5932e+03, -9.2226e+02, -1.4066e+02,  9.1071e+02,
+        -2.4981e+03, -7.9174e+02, -1.9794e+05,  4.1217e+02,  8.8064e+02,
+         6.9046e+02], requires_grad=True)
+REJECT
+0d:00:04:55 | 0d:00:00:05 | #################### |  98/100 | 0.33       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-3.2060e+14, -3.7579e+11, -1.9635e+11, -4.6832e+11, -1.6293e+11,
+        -2.3972e+11,  1.4569e+11,  1.1299e+10,  5.8492e+11,  4.0622e+11,
+         6.8555e+11], requires_grad=True)
+REJECT
+0d:00:04:56 | 0d:00:00:02 | #################### |  99/100 | 0.34       ********** Leapfrog process **********
+********** ProcessType : Sampler.RMHMC -- Integrator : Integrator.EXPLICIT
+Invalid log_prob: -inf, params: tensor([-1.0463e+06, -1.6698e+02,  4.8804e+01,  2.6032e+02,  3.7489e+02,
+        -4.9331e+02, -8.9093e+01, -3.3244e+03, -2.0878e+02,  1.7736e+05,
+        -3.6253e+01], requires_grad=True)
+REJECT
+0d:00:04:56 | 0d:00:00:00 | #################### | 100/100 | 0.34       No handles with labels found to put in legend.
+
+Acceptance Rate 0.00
+process time :296.71 seconds

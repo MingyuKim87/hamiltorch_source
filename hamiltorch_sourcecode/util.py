@@ -178,6 +178,7 @@ def hessian(output, inputs, out=None, allow_unused=False, create_graph=False, re
         out = output.new_zeros(n, n)
 
     ai = 0
+
     for i, inp in enumerate(inputs):
         [grad] = torch.autograd.grad(output, inp, create_graph=True, allow_unused=allow_unused)
         grad = torch.zeros_like(inp) if grad is None else grad
@@ -190,6 +191,7 @@ def hessian(output, inputs, out=None, allow_unused=False, create_graph=False, re
                 row = grad[j].new_zeros(sum(x.numel() for x in inputs[i:]) - j)
 
             out[ai, ai:].add_(row.type_as(out))  # ai's row
+
             if ai + 1 < n:
                 out[ai + 1:, ai].add_(row[1:].type_as(out))  # ai's column
             del row

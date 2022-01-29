@@ -42,8 +42,13 @@ if __name__ == "__main__":
 
     # Explicit RMHMC with SOFTABS
     set_random_seed(123)
-    params_init = torch.ones(D + 1)
-    params_init[0] = 0.
+    params_init = torch.vstack((torch.ones(D + 1), torch.ones(D + 1)))
+
+    # DEBUG
+    print(params_init.shape)
+    print(params_init)
+
+    params_init[:, 0] = 0.
     step_size = 0.14 
     num_samples = 100 # For results in plot num_samples = 1000
     L = 25
@@ -54,7 +59,11 @@ if __name__ == "__main__":
     # explicit RMHMC
     if not is_file_load:
         # process time
-        start = time.process_time()
+        start = time.time()
+
+        # DEBUG
+        print(params_init.shape)
+        print(params_init)
 
         params_e_rmhmc = sample(log_prob_func=funnel_ll, params_init=params_init, num_samples=num_samples,
                                     sampler=Sampler.RMHMC, integrator=Integrator.EXPLICIT,
@@ -63,10 +72,10 @@ if __name__ == "__main__":
                                     softabs_const=softabs_const, debug=True)
 
         # end time
-        end = time.process_time()
+        end = time.time()
 
         # print
-        print("process time :", end-start, "seconds")
+        print("process time :{:.2f}".format(end-start), "seconds")
 
         # Covert to numpy arrays for plotting
         coords_e_rmhmc = torch.cat(params_e_rmhmc).reshape(len(params_e_rmhmc),-1).numpy()

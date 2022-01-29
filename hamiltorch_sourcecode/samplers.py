@@ -2,8 +2,13 @@ import torch
 import torch.nn as nn
 from enum import Enum
 
+import random
+import time
+
 from numpy import pi
 from . import util
+from .coupling import *
+
 
 # Docstring:
 # https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
@@ -250,6 +255,11 @@ def leapfrog(params, momentum, log_prob_func, steps=10, step_size=0.1, jitter=0.
         List of momentum collected in the trajectory. Note that explicit RMHMC returns a copy of two lists.
 
     """
+    # DEBUG
+    print("*"*10, "Leapfrog process", "*"*10)
+    print("*"*10, "ProcessType : {}".format(sampler), "-"*2, "Integrator : {}".format(integrator))
+    # process time
+    start_leapfrog_time = time.time()
 
     params = params.clone(); momentum = momentum.clone()
     # TodO detach graph when storing ret_params for memory saving
@@ -288,6 +298,15 @@ def leapfrog(params, momentum, log_prob_func, steps=10, step_size=0.1, jitter=0.
         # only need last for Hamiltoninian check (see p.14) https://arxiv.org/pdf/1206.1901.pdf
         ret_momenta[-1] = ret_momenta[-1] - 0.5 * step_size * p_grad.clone()
             # import pdb; pdb.set_trace()
+        
+        # DEBUG
+        # end time
+        end_leapfrog_time = time.time()
+
+        # print
+        print("leap frog process time : {:.2f}".format(end_leapfrog_time-start_leapfrog_time), "seconds")
+        
+        
         return ret_params, ret_momenta
     elif sampler == Sampler.RMHMC and (integrator == Integrator.IMPLICIT or integrator == Integrator.S3):
         if integrator is not Integrator.S3:
@@ -369,6 +388,15 @@ def leapfrog(params, momentum, log_prob_func, steps=10, step_size=0.1, jitter=0.
 
             ret_params.append(params)
             ret_momenta.append(momentum)
+        
+        
+        # DEBUG
+        # end time
+        end_leapfrog_time = time.time()
+
+        # print
+        print("leap frog process time : {:.2f}".format(end_leapfrog_time-start_leapfrog_time), "seconds")
+        
         return ret_params, ret_momenta
 
     elif sampler == Sampler.RMHMC and integrator == Integrator.EXPLICIT:
@@ -441,6 +469,14 @@ def leapfrog(params, momentum, log_prob_func, steps=10, step_size=0.1, jitter=0.
 
             ret_params.append(params.clone())
             ret_momenta.append(momentum.clone())
+        
+        # DEBUG
+        # end time
+        end_leapfrog_time = time.time()
+
+        # print
+        print("leap frog process time : {:.2f}".format(end_leapfrog_time-start_leapfrog_time), "seconds")
+        
         return [ret_params,params_copy], [ret_momenta, momentum_copy]
 
     # PAGE 35 MCMC Using Hamiltonian dynamics (Neal 2011)
@@ -580,6 +616,13 @@ def leapfrog(params, momentum, log_prob_func, steps=10, step_size=0.1, jitter=0.
                 ret_params.append(params.clone())
                 ret_momenta.append(momentum.clone())
 
+        # DEBUG
+        # end time
+        end_leapfrog_time = time.time()
+
+        # print
+        print("leap frog process time : {:.2f}".format(end_leapfrog_time-start_leapfrog_time), "seconds")
+
         return ret_params, ret_momenta
 
     else:
@@ -684,7 +727,6 @@ def rm_hamiltonian(params, momentum, log_prob_func, jitter, normalizing_const, s
     -------
     torch.tensor
         Returns the value of the Hamiltonian: shape (1,).
-
     """
 
     log_prob = log_prob_func(params)
@@ -837,7 +879,7 @@ def sample(log_prob_func, params_init, num_samples=10, num_steps_per_sample=10, 
     log_prob_func : function
         A log_prob_func must take a 1-d vector of length equal to the number of parameters that are being sampled.
     params_init : torch.tensor
-        Initialisation of the parameters. This is a vector corresponding to the starting point of the sampler: shape: (D,), where D is the number of parameters of the model.
+        Initialisation of the parameters. This is a vector corresponding to the start_leapfrog_timeing point of the sampler: shape: (D,), where D is the number of parameters of the model.
     num_samples : int
         Sets the number of samples corresponding to the number of momentum resampling steps/the number of trajectories to sample.
     num_steps_per_sample : int
@@ -896,7 +938,7 @@ def sample(log_prob_func, params_init, num_samples=10, num_steps_per_sample=10, 
     # Needed for memory moving i.e. move samples to CPU RAM so lookup GPU device
     device = params_init.device
 
-    if params_init.dim() != 1:
+    if params_init.dim() != 2:
         raise RuntimeError('params_init must be a 1d tensor.')
 
     if burn >= num_samples:
@@ -937,37 +979,75 @@ def sample(log_prob_func, params_init, num_samples=10, num_steps_per_sample=10, 
     for n in range(num_samples):
         util.progress_bar_update(n)
         try:
-            momentum = gibbs(params, sampler=sampler, log_prob_func=log_prob_func, jitter=jitter, normalizing_const=normalizing_const, softabs_const=softabs_const, metric=metric, mass=mass)
+            samples_for_coupling = []
+            
+            # sampling momentum
+            i = int(random.choice([True, False]) == True)
+            momentum = gibbs(params[i], sampler=sampler, log_prob_func=log_prob_func, jitter=jitter, normalizing_const=normalizing_const, softabs_const=softabs_const, metric=metric, mass=mass)
 
-            ham = hamiltonian(params, momentum, log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric, inv_mass=inv_mass)
+            for i in range(2):                
+                ham = hamiltonian(params[i], momentum, log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric, inv_mass=inv_mass)
+                leapfrog_params, leapfrog_momenta = leapfrog(params[i], momentum, log_prob_func, sampler=sampler, integrator=integrator, steps=num_steps_per_sample, step_size=step_size, inv_mass=inv_mass, jitter=jitter, jitter_max_tries=jitter_max_tries, fixed_point_threshold=fixed_point_threshold, fixed_point_max_iterations=fixed_point_max_iterations, normalizing_const=normalizing_const, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, metric=metric, store_on_GPU = store_on_GPU, debug=debug)
 
-            leapfrog_params, leapfrog_momenta = leapfrog(params, momentum, log_prob_func, sampler=sampler, integrator=integrator, steps=num_steps_per_sample, step_size=step_size, inv_mass=inv_mass, jitter=jitter, jitter_max_tries=jitter_max_tries, fixed_point_threshold=fixed_point_threshold, fixed_point_max_iterations=fixed_point_max_iterations, normalizing_const=normalizing_const, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, metric=metric, store_on_GPU = store_on_GPU, debug=debug)
-            if sampler == Sampler.RMHMC and integrator == Integrator.EXPLICIT:
+                # eval energies
+                leapfrog_ham = [hamiltonian(param, momenta, log_prob_func, jitter=jitter, \
+                                    softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, \
+                                    normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, \
+                                    metric=metric, inv_mass=inv_mass) \
+                                    for param, momenta in zip(leapfrog_params[0], leapfrog_momenta[0])]
 
-                # Step required to remove bias by comparing to Hamiltonian that is not augmented:
-                ham = ham/2 # Original RMHMC
+                # type casting
+                leapfrog_ham = torch.FloatTensor(leapfrog_ham)
 
-                params = leapfrog_params[0][-1].detach().requires_grad_()
-                params_copy = leapfrog_params[-1].detach().requires_grad_()
-                params_copy = params_copy.detach().requires_grad_()
-                momentum = leapfrog_momenta[0][-1]
-                momentum_copy = leapfrog_momenta[-1]
+                # output
+                samples_dict = {"leap_params":leapfrog_params, "leap_momenta":leapfrog_momenta, "ham":leapfrog_ham}
 
-                leapfrog_params = leapfrog_params[0]
-                leapfrog_momenta = leapfrog_momenta[0]
+                # append
+                samples_for_coupling.append(samples_dict)
+                
 
-                # This is trying the new (unbiased) version:
-                new_ham = rm_hamiltonian(params, momentum, log_prob_func, jitter, normalizing_const, softabs_const=softabs_const, sampler=sampler, integrator=integrator, metric=metric) # In rm sampler so no need for inv_mass
-                # new_ham = hamiltonian([params,params_copy] , [momentum,momentum_copy], log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric)
+            '''
+                user defined : Coupling leapfrog indexing
+            '''
+            indices = maximalcoupling(samples_for_coupling[0]['ham'],\
+                samples_for_coupling[1]['ham'])
 
-            else:
-                params = leapfrog_params[-1].to(device).detach().requires_grad_()
-                momentum = leapfrog_momenta[-1].to(device)
-                new_ham = hamiltonian(params, momentum, log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric, inv_mass=inv_mass)
+            for i, (index, sample_c) in enumerate(zip(indices, samples_for_coupling)):
+                # initialization
+                leapfrog_params_temp = sample_c["leap_params"]
+                leapfrog_momenta_temp = sample_c["leap_momenta"]
 
+                # slicing by index
+                if sampler == Sampler.RMHMC and integrator == Integrator.EXPLICIT:
+                    # Step required to remove bias by comparing to Hamiltonian that is not augmented:
+                    ham = ham/2 # Original RMHMC
 
+                    param = leapfrog_params_temp[0][index].detach().requires_grad_()
+                    # params_copy = leapfrog_params[-1].detach().requires_grad_()
+                    # params_copy = params_copy.detach().requires_grad_()
+                    momentum = leapfrog_momenta_temp[0][index]
+                    # momentum_copy = leapfrog_momenta[-1]
 
-            # new_ham = hamiltonian(params, momentum, log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric)
+                    leapfrog_params = leapfrog_params_temp[0]
+                    leapfrog_momenta = leapfrog_momenta_temp[0]
+
+                    # This is trying the new (unbiased) version:
+                    new_ham = rm_hamiltonian(param, momentum, log_prob_func, jitter, normalizing_const, softabs_const=softabs_const, sampler=sampler, integrator=integrator, metric=metric) # In rm sampler so no need for inv_mass
+                    # new_ham = hamiltonian([params,params_copy] , [momentum,momentum_copy], log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric)
+
+                else:
+                    "user defined"
+            
+                    param = leapfrog_params_temp[0][index].to(device).detach().requires_grad_()
+                    new_ham = hamiltonian(params, momentum, log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric, inv_mass=inv_mass)
+                    momentum = leapfrog_momenta_temp[0][index].to(device)
+
+                    # new_ham = hamiltonian(params, momentum, log_prob_func, jitter=jitter, softabs_const=softabs_const, explicit_binding_const=explicit_binding_const, normalizing_const=normalizing_const, sampler=sampler, integrator=integrator, metric=metric)
+
+                # concat
+                params[i] = param
+            
+            
             rho = min(0., acceptance(ham, new_ham))
             if debug == 1:
                 print('Step: {}, Current Hamiltoninian: {}, Proposed Hamiltoninian: {}'.format(n,ham,new_ham))
@@ -977,10 +1057,10 @@ def sample(log_prob_func, params_init, num_samples=10, num_steps_per_sample=10, 
                     print('Accept rho: {}'.format(rho))
                 if n > burn:
                     if store_on_GPU:
-                        ret_params.append(leapfrog_params[-1])
+                        ret_params.append(params)
                     else:
                         # Store samples on CPU
-                        ret_params.append(leapfrog_params[-1].cpu())
+                        ret_params.append(params.cpu())
                         # ret_params.extend([lp.detach().cpu() for lp in leapfrog_params])
             else:
                 num_rejected += 1
@@ -1002,13 +1082,13 @@ def sample(log_prob_func, params_init, num_samples=10, num_steps_per_sample=10, 
                     step_size = eps_bar
                     print('Final Adapted Step Size: ',step_size)
 
-            # if not store_on_GPU: # i.e. delete stuff left on GPU
-            #     # This adds approximately 50% to runtime when using colab 'Tesla P100-PCIE-16GB'
-            #     # but leaves no memory footprint on GPU after use.
-            #     # Might need to check if variables exist as a log prob error could occur before they are assigned!
-            #
-            #     del momentum, leapfrog_params, leapfrog_momenta, ham, new_ham
-            #     torch.cuda.empty_cache()
+        # if not store_on_GPU: # i.e. delete stuff left on GPU
+        #     # This adds approximately 50% to runtime when using colab 'Tesla P100-PCIE-16GB'
+        #     # but leaves no memory footprint on GPU after use.
+        #     # Might need to check if variables exist as a log prob error could occur before they are assigned!
+        #
+        #     del momentum, leapfrog_params, leapfrog_momenta, ham, new_ham
+        #     torch.cuda.empty_cache()
 
         except util.LogProbError:
             num_rejected += 1
@@ -1233,7 +1313,7 @@ def sample_model(model, x, y, params_init, model_loss='multi_class_linear_output
         Output training data to define the log probability. Should be a shape that suits the likelihood (or - loss) of the model.
         First dimension is N, where N is the number of data points.
     params_init : torch.tensor
-        Initialisation of the parameters. This is a vector corresponding to the starting point of the sampler: shape: (D,), where D is
+        Initialisation of the parameters. This is a vector corresponding to the start_leapfrog_timeing point of the sampler: shape: (D,), where D is
         the number of parameters of the model. The device determines which piece of hardware to run on.
     model_loss : {'binary_class_linear_output', 'multi_class_linear_output', 'multi_class_log_softmax_output', 'regression'} or function
         This determines the likelihood to be used for the model. The options correspond to:
@@ -1331,7 +1411,7 @@ def sample_split_model(model, train_loader, params_init, num_splits, model_loss=
     train_loader : torch.utils.data.Dataloader
         Data loader to be used for dividing data into subsets. The batch size corresponds to the subset size.
     params_init : torch.tensor
-        Initialisation of the parameters. This is a vector corresponding to the starting point of the sampler: shape: (D,), where D is
+        Initialisation of the parameters. This is a vector corresponding to the start_leapfrog_timeing point of the sampler: shape: (D,), where D is
         the number of parameters of the model. The device determines which piece of hardware to run on.
     num_splits : int
         Determines the number of splits to use. For maximum use of data set, set to the total number of batches. Be careful to ensure each batch
